@@ -1,0 +1,32 @@
+[
+  {
+    "ProductID": "0",
+	  "Name": "Phone XL",
+    "Price": 799,
+	  "Description": "A large phone with one of the best screens"
+  },
+  {
+    "ProductID": "1",
+	  "Name": "Phone Mini",
+    "Price": 699,
+	  "Description": "A great phone with one of the best cameras"
+  },
+  {
+    "ProductID": "2",
+	  "Name": "Phone Standard",
+    "Price": 299,
+	  "Description": ""
+  },
+  {
+    "ProductID": "3",
+	  "Name": "Test Product",
+    "Price": 199,
+	  "Description": "A test product with test description data"
+  },
+  {
+    "ProductID": "4",
+	  "Name": "Default",
+    "Price": 0,
+	  "Description": ""
+  }
+]

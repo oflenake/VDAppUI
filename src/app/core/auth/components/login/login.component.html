@@ -1,138 +1,134 @@
 <div id="page-top" fxLayoutAlign="center" class="vd-container-header vd-bgprimary-dream px-4">
-  <h2 class="vd-container-text vd-fgprimary-vision">Log In To Vision-Dream</h2>
+  <h2 class="vd-container-text vd-fgprimary-vision">Log In To VisionDream</h2>
 </div>
 
 <div fxLayout="row wrap" fxLayoutAlign="center center" class="vd-layout-wrapper">
   <div fxFlex="80%" fxFlex.lt-md="100%" class="vd-flex-wrapper">
     <div class="vd-container">
 
-      <div class="form-container">
-        <!----------------- Form Log In Section: Start ----------------->
-        <form class="form-login">
-          <div class="text-center mb-4">
-            <!-- Brand Icon -->
-            <a class="clearfix form-item" href="/#/home">
-              <img src="../../assets/vd/brand/images/vd_brand_yelblu_sol_tra_64x64.png"
-                   class="rounded mx-auto" alt="Site Brand" width="64" height="64" />
-            </a>
-            <!-- Form Login Header -->
-            <h1 class="h3 mb-3 font-weight-normal">Please log in</h1>
-          </div>
-          <!-- E-mail address -->
-          <div class="form-label-group">
-            <input type="email" id="emailAddress" name="emailAddress" class="form-control" title="Enter a valid e-mail address"
-                   placeholder="E-mail address" required autocomplete="off" autofocus>
-            <label for="emailAddress">E-mail address</label>
-          </div>
-          <!-- Password -->
-          <div class="form-label-group">
-            <input type="password" id="inputPassword" name="inputPassword" class="form-control" title="A minimum of 6 characters"
-                   placeholder="Password" required autocomplete="off">
-            <label for="inputPassword">Password</label>
-          </div>
-
-          <div class="d-flex justify-content-around">
-            <!-- Checkbox -->
-            <div class="checkbox mb-3">
-              <label>
-                <input type="checkbox" value="rememberMe"> Remember me
-              </label>
-            </div>
-            <!-- Forgot E-mail / Password -->
-            <div class="form-item">
-              <a href="/#/register">Forgot E-mail / Password?</a>
-            </div>
-          </div>
-
-          <!-- Log In Button -->
-          <div class="form-item h3 mb-3">
-            <button class="text-uppercase btn vd-button-primary btn-lg btn-block" type="submit">
-              Log in
-            </button>
-          </div>
-
-          <!-- New users -->
-          <div class="form-item text-center">
-            <p>Are you a new user?</p>
-          </div>
-
-          <!-- Register Now Button -->
-          <div class="text-uppercase">
-            <a mat-button class="btn vd-button-secondary btn-lg btn-block"
-               href="/#/register" role="button">
-              Register Now
-            </a>
-          </div>
-
-          <hr />
-
-          <!---------- Terms and Conditions link ---------->
-          <div class="form-item text-muted text-center">
-            <p>
-              By logging in, I agree to the <a href="/#/legal/terms">T&Cs</a>.
-            </p>
-          </div>
-
-        </form>
-        <!----------------- Form Log In Section: End ----------------->
+      <!-- Brand Icon -->
+      <div class="vd-item text-center h5 mb-4">
+        <img src="../../assets/vd/brand/images/vd_brand_yelblu_sol_tra_64x64.png"
+             class="rounded mx-auto" alt="VisionDream Brand" width="64" height="64" />
       </div>
 
-      <hr />
+      <!-- Mat Card Container - Start -->
+      <div fxLayoutAlign="center" class="vd-container-card">
+        <mat-card class="vd-card-width">
 
-      <div class="card">
+          <!-- Mat Card Header -->
+          <mat-card-header fxLayoutAlign="center" class="vd-bgprimary-dream text-white py-2">
+            <mat-card-title>
+              <strong class="fg-white">Log in</strong>
+            </mat-card-title>
+          </mat-card-header>
 
-        <h5 class="card-header info-color white-text text-center py-4">
-          <strong>Sign in</strong>
-        </h5>
-
-        <div class="card-body px-lg-5 pt-0">
-
-          <form class="md-form" style="color: #757575;">
-
-            <input type="email" id="materialLoginFormEmail" class="form-control">
-            <label for="materialLoginFormEmail">E-mail</label>
-
-
-            <input type="password" id="materialLoginFormPassword" class="form-control">
-            <label for="materialLoginFormPassword">Password</label>
-
-
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
-                <label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+          <!-- Mat Card Content - Start -->
+          <mat-card-content class="vd-container-card px-lg-5 pt-0">
+            <!-- Form Section - Start -->
+            <form autocomplete="off" novalidate class="form-dark vd-container-card">
+              <div class="vd-container-card">
+                <!-- E-mail / Username Field -->
+                <mat-form-field [floatLabel]="options.value.floatLabel">
+                  <mat-label>E-mail / Username</mat-label>
+                  <input matInput type="email" placeholder="Your e-mail or username">
+                </mat-form-field>
+                <!-- Password Field -->
+                <mat-form-field [floatLabel]="options.value.floatLabel">
+                  <mat-label>Password</mat-label>
+                  <input matInput type="password" placeholder="Your password">
+                </mat-form-field>
               </div>
-              <div>
-                <a href="">Forgot password?</a>
+
+              <!-- Remember Me and Forgot Password Section -->
+              <div class="d-flex align-items-center justify-content-between">
+                <div>
+                  <mat-checkbox formControlName="rememberMeCheck">Remember me</mat-checkbox>
+                </div>               
+                <div>
+                  <a href="/#/my-account/lost-password">Forgot password?</a>
+                </div>
               </div>
-            </div>
 
+              <!-- Log in Button -->
+              <div class="vd-btn-container">
+                <button mat-button
+                        class="vd-btn-global vd-btn-dream-secondary btn-rounded btn-block my-4 waves-effect z-depth-0"
+                        type="submit">
+                  <span class="text-uppercase">Log in</span>
+                </button>
+              </div>
 
-            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+              <!-- Not a Member or Social Log in -->
+              <div class="text-center">
+                <p>
+                  Not a member?
+                  <a href="/#/register">Register</a>
+                </p>
 
+                <p>or log in with:</p>
+                <a type="button" class="btn-floating btn-fb btn-sm">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a type="button" class="btn-floating btn-tw btn-sm">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a type="button" class="btn-floating btn-li btn-sm">
+                 <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a type="button" class="btn-floating btn-git btn-sm">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+
+              <hr>
+              <!-- Legal Section -->
+              <div class="text-center">
+                <small class="text-muted">
+                  By clicking
+                  <span class="text-uppercase"><em>Log in</em></span> you agree to our
+                  <a href="/#/legal/terms-of-service">Terms of Service</a> and
+                  <a href="/#/legal/privacy-policy">Privacy Policy</a>.
+                </small>
+              </div>
+            </form>
+            <!-- Form Section - End -->
+          </mat-card-content>
+          <!-- Mat Card Content - End -->
+
+          <!--<mat-card-actions>
             <div class="text-center">
               <p>
-                Not a member?
-                <a href="">Register</a>
+                By clicking
+                <span class="text-uppercase"><em>Log in</em></span> you agree to our
+                <a href="" target="_blank">terms of service</a> and
+                <a href="" target="_blank">privacy</a>.
               </p>
-
-              <p>or sign in with:</p>
-              <a type="button" class="btn-floating btn-fb btn-sm">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a type="button" class="btn-floating btn-tw btn-sm">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a type="button" class="btn-floating btn-li btn-sm">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a type="button" class="btn-floating btn-git btn-sm">
-                <i class="fab fa-github"></i>
-              </a>
             </div>
-          </form>
-        </div>
+          </mat-card-actions>-->
+        </mat-card>
       </div>
+      <!-- Mat Card Container - End -->
+
+      <!--<mat-card class="vd-card-width">
+        <mat-card-header>
+          <div mat-card-avatar class="vd-card-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting.
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>-->
 
     </div>
   </div>

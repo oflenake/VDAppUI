@@ -1,113 +1,163 @@
-/* Navigation links */
-a {
+/**
+ * Global Component Styles
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*a {
   color: var(--deep-sky-blue-capri) !important;
-  padding: 2px 6px;
+  padding: 1px 5px;
   text-align: center;
   display: inline-block;
 }
   a:hover, a:focus {
     color: var(--pure-yellow) !important;
-    padding: 2px 6px;
+    padding: 1px 5px;
     text-align: center;
+    display: inline-block;
+  }*/
+
+a {
+  background-color: transparent !important;
+  color: var(--deep-sky-blue-capri) !important;
+  text-decoration: none;
+  display: inline-block;
+}
+  a:hover,
+  a:focus {
+    background-color: inherit;
+    color: var(--pure-yellow) !important;
+    text-decoration: none;
     display: inline-block;
   }
 
-/*
-  Custom styles for generic form container
------------------------------------------- */
-.form-container {
-  background-color: transparent;
-  display: -ms-flexbox;
-  -ms-flex-align: center;
-  align-items: center;
+/********************** VD Card and Mat Card **********************/
+mat-card-title {
+  text-align: center;
+  padding-top: 0.5em;
 }
 
-.form-register {
-  width: auto;
-  max-width: 420px;
-  padding: 5px;
-  margin: auto;
+mat-form-field {
+  width: 400px;
 }
 
-.form-label-group {
-  position: relative;
-  margin-bottom: 1em;
+.vd-item {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0;
 }
 
-.form-label-group > input,
-.form-label-group > label {
-  height: 3.125em;
-  padding: .75em;
+.vd-card-width {
+  max-width: 450px;
 }
 
-.form-label-group > label {
+.vd-card-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.vd-container-card {
+  display: flex;
+  flex-direction: column;
+}
+  .vd-container-card > * {
+    width: 100%;
+  }
+  
+  .vd-container-card mat-card {
+    margin-bottom: 20px;
+  }
+    .vd-container-card mat-card > * {
+      margin: 5px 0;
+    }
+
+  .vd-container-card form {
+    margin-bottom: 0;
+  }
+    .vd-container-card form > * {
+      margin: 5px 0;
+    }
+
+  .vd-container-card .mat-checkbox,
+  .vd-container-card .mat-radio-button {
+    margin: 0 12px;
+  }
+
+/**
+ * Form Register Styles
+ */
+.form-dark .font-small {
+  font-size: 0.8em;
+}
+
+.form-dark [type="checkbox"] + label,
+.form-dark [type="radio"] + label {
+  font-size: 0.8em;
+}
+
+.form-dark [type="checkbox"] + label:before {
+  top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.form-dark .md-form label {
+  color: var(--white) !important;
+}
+
+.form-dark input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+
+.form-dark input[type=text]:focus:not([readonly]) + label {
+  color: var(--white) !important;
+}
+
+.form-dark input[type=password]:focus:not([readonly]) {
+  border-bottom: 1px solid #00C851;
+  -webkit-box-shadow: 0 1px 0 0 #00C851;
+  box-shadow: 0 1px 0 0 #00C851;
+}
+
+.form-dark input[type=password]:focus:not([readonly]) + label {
+  color: var(--white) !important;
+}
+
+.form-dark input[type="checkbox"] + label:before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
-  width: 100%;
-  margin-bottom: 0; /* Override default `<label>` margin */
-  line-height: 1.5;
-  color: #495057;
-  pointer-events: none;
-  cursor: text; /* Match the input under the label */
-  border: 1px solid transparent;
-  border-radius: .25em;
-  transition: all .1s ease-in-out;
+  width: 17px;
+  height: 17px;
+  z-index: 0;
+  border: 1.5px solid var(--white) !important;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.form-label-group input::-webkit-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input:-ms-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::-ms-input-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::-moz-placeholder {
-  color: transparent;
-}
-
-.form-label-group input::placeholder {
-  color: transparent;
-}
-
-.form-label-group input:not(:placeholder-shown) {
-  padding-top: 1.25em;
-  padding-bottom: .25em;
-}
-
-.form-label-group input:not(:placeholder-shown) ~ label {
-  padding-top: .25em;
-  padding-bottom: .25em;
-  font-size: 12px;
-  color: #777;
-}
-
-/* Fallback for Edge
--------------------------------------------------- */
-@supports (-ms-ime-align: auto) {
-  .form-label-group > label {
-    display: none;
-  }
-
-  .form-label-group input::-ms-input-placeholder {
-    color: #777;
-  }
-}
-
-/* Fallback for IE
--------------------------------------------------- */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .form-label-group > label {
-    display: none;
-  }
-
-  .form-label-group input:-ms-input-placeholder {
-    color: #777;
-  }
+.form-dark input[type="checkbox"]:checked + label:before {
+  top: -4px;
+  left: -3px;
+  width: 12px;
+  height: 22px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent #00c851 #00c851 transparent;
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }

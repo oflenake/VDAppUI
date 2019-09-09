@@ -17,13 +17,16 @@ import { NavMainComponent } from './navigation/nav-main/nav-main.component';
 import { NavSideComponent } from './navigation/nav-side/nav-side.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
-import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { PrivacyComponent } from './pages/legal/privacy/privacy.component';
 import { TermsComponent } from './pages/legal/terms/terms.component';
 import { NotFoundComponent } from './pages/errors/not-found/not-found.component';
 import { ServerErrorComponent } from './pages/errors/server-error/server-error.component';
+
+// Icons - Brands
+//import { faFlag, faUser as regularUser } from '@fortawesome/free-regular-svg-icons';
+//import { faFacebook, faUser as regularUser } from '@fortawesome/free-regular-svg-icons';
 
 // Icons - Generic
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
@@ -57,6 +60,10 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faClipboardList } from '@fortawesome/free-solid-svg-icons';
 import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
+import { ProductsComponent } from './products/products.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -67,13 +74,16 @@ import { faSort } from '@fortawesome/free-solid-svg-icons';
     NavSideComponent,
     HomeComponent,
     ServicesComponent,
-    ProjectsComponent,
     ContactComponent,
     FooterComponent,
     PrivacyComponent,
     TermsComponent,
     NotFoundComponent,
-    ServerErrorComponent
+    ServerErrorComponent,
+    ProductsComponent,
+    PortfolioComponent,
+    AboutComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

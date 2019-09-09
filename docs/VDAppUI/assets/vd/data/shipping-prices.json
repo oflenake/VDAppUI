@@ -1,0 +1,27 @@
+[
+  {
+    "ShippingPriceID": "0",
+	  "Type": "Overnight",
+    "Price": 25.99
+  },
+  {
+    "ShippingPriceID": "1",
+	  "Type": "3-Business-Days",
+    "Price": 9.99
+  },
+  {
+    "ShippingPriceID": "2",
+	  "Type": "Postal",
+    "Price": 2.99
+  },
+  {
+    "ShippingPriceID": "3",
+	  "Type": "5-Business-Days",
+    "Price": 1.99
+  },
+  {
+    "ShippingPriceID": "4",
+	  "Type": "Default",
+    "Price": 0.00
+  }
+]

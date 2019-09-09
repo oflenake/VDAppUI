@@ -6,5 +6,5 @@ export class VDBuildVersionModel {
   public VDDesc: string = 'VisionDream ICT Solutions';
   public VDCopyright: string = '2019 VisionDream ICT Solutions. All Rights Reserved';
   public VDUrlLocal: string = 'http://visiondream.local';
-  public VDUrlExternal: string = 'https://visiondreamict.wordpress.com/';
+  public VDUrlExternal: string = 'https://visiondreamict.wordpress.com';
 }

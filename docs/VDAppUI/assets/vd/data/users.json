@@ -1,0 +1,52 @@
+[
+  {
+    "UserID": "0",
+	  "UserName": "kgupi",
+    "Email": "gupilenake@gmail.com",
+	  "Password": "kgupi",
+	  "Salt": "kgupi",
+    "FirstName": "Kgupi",
+	  "LastName": "Lenake",
+	  "CellNumber": "072 687 0991"
+  },
+  {
+    "UserID": "1",
+	  "UserName": "onkgopotse",
+    "Email": "onkgopotse.lenake@visiondream.local",
+	  "Password": "onkgopotse",
+	  "Salt": "onkgopotse",
+    "FirstName": "Onkgopotse",
+	  "LastName": "Lenake",
+	  "CellNumber": "072 687 0991"
+  },
+  {
+    "UserID": "2",
+	  "UserName": "kgupi",
+    "Email": "gupilenake@gmail.com",
+	  "Password": "A large phone with one of the best screens",
+	  "Salt": "kgupi",
+    "FirstName": "gupilenake@gmail.com",
+	  "LastName": "A large phone with one of the best screens",
+	  "CellNumber": "072 687 0991"
+  },
+  {
+    "UserID": "3",
+	  "UserName": "kgupi",
+    "Email": "gupilenake@gmail.com",
+	  "Password": "A large phone with one of the best screens",
+	  "Salt": "kgupi",
+    "FirstName": "gupilenake@gmail.com",
+	  "LastName": "A large phone with one of the best screens",
+	  "CellNumber": "072 687 0991"
+  },
+  {
+    "UserID": "4",
+	  "UserName": "kgupi",
+    "Email": "gupilenake@gmail.com",
+	  "Password": "A large phone with one of the best screens",
+	  "Salt": "kgupi",
+    "FirstName": "gupilenake@gmail.com",
+	  "LastName": "A large phone with one of the best screens",
+	  "CellNumber": "072 687 0991"
+  }
+]

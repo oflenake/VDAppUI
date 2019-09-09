@@ -4,84 +4,207 @@
 
 <div fxLayout="row wrap" fxLayoutAlign="center center" class="vd-layout-wrapper">
   <div fxFlex="80%" fxFlex.lt-md="100%" class="vd-flex-wrapper">
-    <div class="vd-container">
+      <div class="vd-container">
 
-      <p class="text-center h4 mb-4 font-weight-normal">Capture account information below:</p>
+          <div class="vd-item text-center h5 mb-4 font-weight-normal">
+              <p>Capture account information below:</p>
+          </div>
 
-      <hr />
+          <!-- Mat Card Container - Start -->
+          <div fxLayoutAlign="center" class="vd-container-card">
+              <mat-card class="vd-card-width">
 
-      <div class="card">
+                  <!-- Mat Card Header -->
+                  <mat-card-header fxLayoutAlign="center" class="vd-bgprimary-dream white-text py-2">
+                      <mat-card-title>
+                          <strong class="fg-white">Register</strong>
+                      </mat-card-title>
+                  </mat-card-header>
 
-        <h5 class="card-header info-color white-text text-center py-4">
-          <strong>Sign up</strong>
-        </h5>
+                  <!-- Mat Card Content - Start -->
+                  <mat-card-content class="vd-container-card px-lg-3 pt-0">
 
-        <div class="card-body px-lg-5 pt-0">
+                      <form autocomplete="off" novalidate class="form-dark vd-container-card">
 
-          <form class="md-form" style="color: #757575;">
+                          <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                          <label for="materialRegisterFormFirstName">Your first name</label>
 
-            <input type="text" id="materialRegisterFormFirstName" class="form-control">
-            <label for="materialRegisterFormFirstName">First name</label>
+                          <input type="text" id="materialRegisterFormLastName" class="form-control">
+                          <label for="materialRegisterFormLastName">Your last name</label>
 
-            <input type="email" id="materialRegisterFormLastName" class="form-control">
-            <label for="materialRegisterFormLastName">Last name</label>
+                          <input type="text" id="materialRegisterFormUserName" class="form-control">
+                          <label for="materialRegisterFormUserName">Your username</label>
 
-            <input type="email" id="materialRegisterFormEmail" class="form-control">
-            <label for="materialRegisterFormEmail">E-mail</label>
+                          <input type="text" id="materialRegisterFormEmail" class="form-control">
+                          <label for="materialRegisterFormEmail">Your email</label>
 
-            <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPasswordHelpBlock">
-            <label for="materialRegisterFormPassword">Password</label>
+                          <input type="password" id="materialRegisterFormPassword" class="form-control"
+                                 aria-describedby="materialRegisterFormPasswordHelpBlock">
+                          <label for="materialRegisterFormPassword">Your password</label>
 
-            <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
-              At least 8 characters and 1 digit
-            </small>
+                          <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                              At least 8 characters and 1 digit
+                          </small>
 
-            <input type="password" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhoneHelpBlock">
-            <label for="materialRegisterFormPhone">Phone number</label>
+                          <input type="password" id="materialRegisterFormRepeatPassword" class="form-control"
+                                 aria-describedby="materialRegisterFormRepeatPasswordHelpBlock">
+                          <label for="materialRegisterFormReapeatPassword">Repeat password</label>
 
-            <small id="materialRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
-              Optional - for two step authentication
-            </small>
+                          <small id="materialRegisterFormRepeatPasswordHelpBlock" class="form-text text-muted mb-4">
+                              At least 8 characters and 1 digit
+                          </small>
 
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="materialRegisterFormNewsletter">
-              <label class="form-check-label" for="materialRegisterFormNewsletter">Subscribe to our newsletter</label>
-            </div>
+                          <!-- Register Button -->
+                          <div class="vd-btn-container">
+                              <button mat-button
+                                      class="vd-btn-global vd-btn-dream-secondary btn-rounded btn-block my-4 waves-effect z-depth-0"
+                                      type="submit">
+                                  <span class="text-uppercase">Register</span>
+                              </button>
+                          </div>
 
+                          <div class="text-center">
+                              <p>or register with:</p>
 
-            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+                              <a type="button" class="btn-floating btn-fb btn-sm">
+                                  <i class="fab fa-facebook-f"></i>
+                              </a>
+                              <a type="button" class="btn-floating btn-tw btn-sm">
+                                  <i class="fab fa-twitter"></i>
+                              </a>
+                              <a type="button" class="btn-floating btn-li btn-sm">
+                                  <i class="fab fa-linkedin-in"></i>
+                              </a>
+                              <a type="button" class="btn-floating btn-git btn-sm">
+                                  <i class="fab fa-github"></i>
+                              </a>
 
-            <div class="text-center">
-              <p>or sign up with:</p>
+                              <hr>
 
-              <a type="button" class="btn-floating btn-fb btn-sm">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a type="button" class="btn-floating btn-tw btn-sm">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a type="button" class="btn-floating btn-li btn-sm">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-              <a type="button" class="btn-floating btn-git btn-sm">
-                <i class="fab fa-github"></i>
-              </a>
+                              <small class="text-muted">
+                                  By clicking <em>Register</em> you agree to data processing by the administrator.
+                                  The administrator processes data following the
+                                  <a href="/#/legal/privacy-policy">Privacy Policy</a>.
+                              </small>
+                          </div>
 
-              <hr>
+                      </form>
+                  </mat-card-content>
+                  <!-- Mat Card Content - End -->
 
-              <p>
-                By clicking
-                <em>Sign up</em> you agree to our
-                <a href="" target="_blank">terms of service</a> and
-                <a href="" target="_blank">terms of service</a>.
-              </p>
-            </div>
+              </mat-card>
+          </div>
+          <!-- Mat Card Container - End -->
 
-          </form>
-        </div>
+          <hr />
+
+          <!-- Mat Card Container - Start -->
+          <div fxLayout="row wrap" fxLayoutAlign="center center" class="vd-container-card">
+            <mat-card fxFlex="450px" fxFlex.xs="100%" class="vd-card-width">
+
+              <!-- Mat Card Header -->
+              <mat-card-header fxLayout="column wrap" fxLayoutAlign="center center" class="vd-bgprimary-dream white-text py-2">
+                <mat-card-title>
+                  <strong class="fg-white">Register</strong>
+                </mat-card-title>
+              </mat-card-header>
+
+              <form formGroup="registerForm" autocomplete="off" novalidate (ngSubmit)="registerAccountApi(registerForm.value)"
+                    fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="10px"
+                    class="vd-container-card">
+                <mat-card-content class="vd-container-card px-lg-3 pt-0">
+                  <!-- First name Field -->
+                  <mat-form-field>
+                    <mat-label>First name</mat-label>
+                    <input matInput type="text" placeholder="Your first name"
+                           formControlName="controlFirstName" id="controlFirstName">
+                    <mat-hint align="end">Not more than 50 characters long.</mat-hint>
+                    <mat-error *ngIf="hasError('controlFirstName', 'required')">First name is required</mat-error>
+                    <mat-error *ngIf="hasError('controlFirstName', 'maxlength')">You have more than 50 characters</mat-error>
+                  </mat-form-field>
+
+                  <!-- Last name Field -->
+                  <mat-form-field>
+                    <mat-label>Last name</mat-label>
+                    <input matInput type="text" placeholder="Your last name"
+                           formControlName="controlLastName" id="controlLastName">
+                    <mat-hint align="end">Not more than 50 characters long.</mat-hint>
+                    <mat-error *ngIf="hasError('controlLastName', 'required')">Last name is required</mat-error>
+                    <mat-error *ngIf="hasError('controlLastName', 'maxlength')">You have more than 50 characters</mat-error>
+                  </mat-form-field>
+
+                  <!-- Username Field -->
+                  <mat-form-field>
+                    <mat-label>Username</mat-label>
+                    <input matInput type="text" placeholder="Your username"
+                           formControlName="controlUserName" id="controlUserName">
+                    <mat-hint align="end">Not more than 60 characters long.</mat-hint>
+                    <mat-error *ngIf="hasError('controlUserName', 'required')">Username is required</mat-error>
+                    <mat-error *ngIf="hasError('controlUserName', 'maxlength')">You have more than 60 characters</mat-error>
+                  </mat-form-field>
+
+                  <!-- E-mail Field -->
+                  <mat-form-field>
+                    <mat-label>E-mail</mat-label>
+                    <input matInput type="email" placeholder="Your e-mail"
+                           formControlName="controlEmail" id="controlEmail">
+                    <mat-hint align="end">Not more than 100 characters long.</mat-hint>
+                    <mat-error *ngIf="hasError('controlEmail', 'required')">E-mail is required</mat-error>
+                    <mat-error *ngIf="hasError('controlEmail', 'maxlength')">You have more than 100 characters</mat-error>
+                  </mat-form-field>
+
+                  <!-- Password Field -->
+                  <mat-form-field>
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="Your password"
+                           formControlName="controlPassword" id="controlPassword">
+                    <mat-hint align="end">At least 8 characters and 1 digit.</mat-hint>
+                    <mat-error *ngIf="hasError('controlPassword', 'required')">Password is required</mat-error>
+                    <mat-error *ngIf="hasError('controlPassword', 'minlength')">You have less than 8 characters</mat-error>
+                  </mat-form-field>
+
+                  <!-- Repeat Password Field -->
+                  <mat-form-field>
+                    <mat-label>Repeat password</mat-label>
+                    <input matInput type="password" placeholder="Your repeat password"
+                           formControlName="controlRepeatPassword" id="controlRepeatPassword">
+                    <mat-hint align="end">At least 8 characters and 1 digit.</mat-hint>
+                    <mat-error *ngIf="hasError('controlRepeatPassword', 'required')">Repeat password is required</mat-error>
+                    <mat-error *ngIf="hasError('controlRepeatPassword', 'minlength')">You have less than 8 characters</mat-error>
+                  </mat-form-field>
+                </mat-card-content>
+
+                <mat-card-actions align="center">
+                  <!-- Register and Cancel Buttons -->
+                  <!--<div class="vd-btn-container">
+                    <button mat-button
+                            class="vd-btn-global vd-btn-dream-secondary"
+                            [disabled]="!registerForm.valid">
+                      <span class="text-uppercase">Register</span>
+                    </button>
+                  </div>-->
+                  <!--<button mat-raised-button color="primary" [disabled]="!registerForm.valid">Register</button>-->
+                  <button mat-button
+                          class="vd-btn-global vd-btn-dream-secondary"
+                          [disabled]="!registerForm.valid">Register
+                  </button>
+                  <button type="button" mat-raised-button color="warn" (click)="onCancel()">Cancel</button>
+                </mat-card-actions>                
+                <!-- Privacy Policy Section -->
+                <div class="vd-container-card px-lg-3 pt-0 text-center">
+                  <hr>
+                  <small class="text-muted">
+                    By clicking <em>Register</em> you agree to data processing by the administrator.
+                    The administrator processes data following the
+                    <a href="/#/legal/privacy-policy">Privacy Policy</a>.
+                  </small>
+                </div>
+              </form>
+            </mat-card>
+          </div>
+          <!-- Mat Card Container - End -->
+
       </div>
-
-    </div>
   </div>
 </div>
 

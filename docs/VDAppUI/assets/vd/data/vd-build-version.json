@@ -1,0 +1,12 @@
+[
+  {
+    "SystemInformationID": "1",
+	  "Title": "VisionDream",
+	  "Alias": "App ver: ",
+	  "Version": "2.2.1",
+	  "VDDesc": "VisionDream ICT Solutions",
+	  "VDCopyright": "2019 VisionDream ICT Solutions. All Rights Reserved",
+	  "VDUrlLocal": "http://visiondream.local",
+	  "VDUrlExternal": "https://visiondreamict.wordpress.com"
+  }
+]
