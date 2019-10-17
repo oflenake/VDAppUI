@@ -1,0 +1,52 @@
+{
+  "APP_NAME": "Serendipity CRM",
+  "APP_TOOLBAR_TITLE": "Serendipity CRM",
+
+  "LOGIN_BUTTON": "SIGN IN",
+  "LOGIN_LABEL": "Sign in",
+  "DONT_HAVE_AN_ACCOUNT_LABEL": "Don't have an Account?",
+  "SIGN_UP_BUTTON": "Sign up",
+
+  "REGISTER_BUTTON": "REGISTER",
+  "REGISTER_LABEL": "Create account",
+
+  "MY_WORK": "My Work",
+  "CUSTOMERS": "Customers",
+
+  "ACCOUNTS_HEADER": "Accounts",
+  "ACTIVITIES_HEADER": "Activities",
+  "CONTACTS_HEADER": "Contacts",
+  "DASHBOARDS_HEADER": "Dashboard",
+  "LEADS_HEADER": "Leads",
+  "OPPORTUNITIES_HEADER": "Opportunities",
+
+  "CONTACT_HEADER": "Contact",
+  "ACCOUNT_HEADER": "Account",
+
+  "SALES_ACTIVITY_DASHBOARD_HEADER": "Sales Activity Dashboard",
+
+  "ACCOUNTS": "Accounts",
+  "ACTIVITIES": "Activities",
+  "CONTACTS": "Contacts",
+  "DASHBOARDS": "Dashboard",
+  "LEADS": "Leads",
+  "OPPORTUNITIES": "Opportunities",
+
+  "DEACTIVATE": "DEACTIVATE",
+  "EMAIL_A_LINK": "EMAIL A LINK",
+  "FULL_SCREEN": "FULL SCREEN",
+  "NEW": "NEW",
+  "REFRESH": "REFRESH",
+  "RUN_REPORT": "RUN REPORT",
+  "SAVE": "SAVE",
+  "SAVE_AS": "SAVE AS",
+  "SAVE_AND_CLOSE": "SAVE & CLOSE",
+  "SET_AS_DEFAULT": "SET AS DEFAULT",
+  "WIDGETS": "WIDGETS",
+
+  "FULL_NAME": "FULL NAME",
+  "EMAIL": "EMAIL",
+  "COMPANY_NAME": "COMPANY NAME",
+  "BUSINESS_PHONE": "BUSINESS PHONE"
+
+}

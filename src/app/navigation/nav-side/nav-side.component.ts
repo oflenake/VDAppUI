@@ -8,6 +8,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
+import { faInfo } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav-side',
@@ -16,28 +17,29 @@ import { faSort } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavSideComponent implements OnInit {
 
-  // Field Properties
-  @Output() sidenavClose = new EventEmitter();
+    // Field Properties
+    @Output() sidenavClose = new EventEmitter();
 
-  // Icons - Side Navigation (includes: vdFaEnvelope, vdFaUser, vdFaSignInAlt)
-  vdFaHome = faHome;
-  vdFaClipboardList = faClipboardList;
-  vdFaProjectDiagram = faProjectDiagram;
-  vdFaEnvelope = faEnvelope;
-  vdFaUser = faUser;
-  vdFaSignInAlt = faSignInAlt;
-  vdFaSort = faSort;
+    // Icons - Side Navigation (includes: vdFaEnvelope, vdFaUser, vdFaSignInAlt)
+    vdFaHome = faHome;
+    vdFaClipboardList = faClipboardList;
+    vdFaProjectDiagram = faProjectDiagram;
+    vdFaEnvelope = faEnvelope;
+    vdFaUser = faUser;
+    vdFaSignInAlt = faSignInAlt;
+    vdFaSort = faSort;
+    vdFaInfo = faInfo;
 
-  // Constructor
-  constructor() { }
+    // Constructor
+    constructor() { }
 
-  // Initialize
-  ngOnInit() {
-  }
+    // Initialize
+    ngOnInit() {
+    }
 
-  // Function Methods - onSidenavClose function
-  public onSidenavClose = () => {
-    this.sidenavClose.emit();
-  }
+    // Function Methods - onSidenavClose function
+    public onSidenavClose = () => {
+        this.sidenavClose.emit();
+    }
 
 }

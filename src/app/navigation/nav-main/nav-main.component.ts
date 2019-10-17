@@ -17,30 +17,31 @@ import { faCogs } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavMainComponent implements OnInit {
 
-  // Field Properties
-  @Output() public sidenavToggle = new EventEmitter();
+    // Field Properties
+    @Output() public sidenavToggle = new EventEmitter();
+    isCollapsed: boolean;
 
-  // Icons - Main Navigation
-  vdFaBars = faBars;
-  vdFaEnvelope = faEnvelope;
-  vdFaUser = faUser;
-  vdFaUserCircle = faUserCircle;
-  vdFaSignInAlt = faSignInAlt;
-  vdFaQuestion = faQuestion;
-  vdFaWrench = faWrench;
-  vdFaCog = faCog;
-  vdFaCogs = faCogs;
+    // Icons - Main Navigation
+    vdFaBars = faBars;
+    vdFaEnvelope = faEnvelope;
+    vdFaUser = faUser;
+    vdFaUserCircle = faUserCircle;
+    vdFaSignInAlt = faSignInAlt;
+    vdFaQuestion = faQuestion;
+    vdFaWrench = faWrench;
+    vdFaCog = faCog;
+    vdFaCogs = faCogs;
 
-  // Constructor
-  constructor() { }
+    // Constructor
+    constructor() { }
 
-  // Initialize
-  ngOnInit() {
-  }
+    // Initialize
+    ngOnInit() {
+    }
 
-  // mat-icon-button click event function
-  public onToggleSidenav = () => {
-  this.sidenavToggle.emit();
-  }
+    // Function Methods - onToggleSidenav mat-icon-button click event function
+    public onToggleSidenav = () => {
+        this.sidenavToggle.emit();
+    }
 
 }

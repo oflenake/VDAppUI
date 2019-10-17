@@ -1,77 +1,116 @@
-/* Highlighting rules for social icons, using normal link items */
-/*li .glyphicon {
-  margin-right: 10px;
+/********************** Navbar Configuration **********************/
+.vd-nav-title {
+    line-height: 50px;
+    /*margin-left: 5px;
+    margin-right: 10px;*/
+    font-size: 1em;
+    color: white;
 }
 
-li.link-active a,
-li.link-active a:hover,
-li.link-active a:focus {
-  background-color: inherit;
-  color: lightgray;
-}*/
-
-/*.nav-item-group {
-  color: var(--dark-gray) !important;
-  font-size: 1em;
-  font-weight: 500;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 1rem;
-}*/
-
-a {
-  font-size: 1em;
-  font-weight: 500;
-  display: inline-block;
+.toolbar-item a {
+    cursor: pointer;
 }
-  a:hover, a:focus {
-    color: var(--very-light-gray) !important;
+
+.navbar {
+    min-height: 60px;
+}
+
+.navbar .nav > li.toolbar-item > a {
+    color: var(--medium-dark-gray);
+    font-weight: bold;
+}
+
+.navbar .nav > .toolbar-item > a.active {
+    color: #000;
+}
+
+.navbar-header {
+    margin-top: -10px;
+}
+
+/*.navbar-collapse {
+    float: right;
+    margin-top: 5px;
+}*/
+
+/*.nav.navbar-padding {
+    margin-left: 20px;
+    margin-top: 5px;
+}*/
+
+a.navbar-brand {
+    color: #fff;
+}
+
+.navbar-brand > img {
     display: inline-block;
-  }
-
-/* Button links */
-.btn {
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
 }
 
-.btn-nav-brand {
-  width: 200px;
-  box-sizing: border-box;
-  text-align: right;
-  color: var(--white) !important;
-  font-size: 1em;
-  background-image: url('../../../assets/vd/brand/images/vd_brand_yelblu_sol_tra_64x64.png');
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding: 5px 10px;
-  margin: 10px 5px;
+/*.navbar-inner {
+    padding-left: 0px;
+    background-color: var(--vivid-blue);
+}*/
+
+.navbar-inner.toolbar {
+    background-color: var(--very-light-gray);
 }
-  .btn-nav-brand:hover,
-  .btn-nav-brand:focus {
-    background-color: inherit;
-    color: var(--pure-yellow) !important;
-  }
+
+/*.navbar-inner.footer {
+    background-color: var(--very-light-gray);
+    height: 50px;
+}*/
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background-color: var(--very-very-very-light-gray);
+    color: var(--trolley-gray);
+}
+
+.navbar .nav li.toolbaritem a:hover, .navbar .nav li a:hover {
+    color: var(--dim-bright-red);
+}
+
+.navbar .nav > li {
+    cursor: pointer;
+}
+
+.navbar .nav > li > a {
+    color: var(--white);
+    font-size: 1em;
+    font-weight: bold;
+    height: 30px;
+    padding-top: 6px;
+    padding-bottom: 0px;
+}
+
+.navbar .nav > li.toolbaritem > a {
+    color: var(--black);
+    font-weight: bold;
+}
+
+/*.nav.navBarPadding {
+    margin-left: 25px;
+    margin-top: 10px;
+}*/
+
+.navbarText {
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    border: 1px solid var(--white);
+}
+
+.navbar-toggle .icon-bar {
+    background-color: var(--white);
+}
+
+/*.navbar-inner.footer {
+    background-color: var(--very-very-very-light-gray);
+    height: 50px;
+}*/
 
 .navigation-items {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-mat-toolbar {
-  border-radius: 3px;
-}
-
-@media(max-width: 959px) {
-  mat-toolbar {
-    border-radius: 0px;
-  }
+    list-style-type: none;
+    /*margin-left: 20px;*/
+    margin-top: 16px;
 }

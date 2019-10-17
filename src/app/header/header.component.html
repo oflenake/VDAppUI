@@ -1,1 +1,136 @@
-<p>header works!</p>
+<mat-toolbar color="primary" class="vd-main-nav mat-elevation-z7">
+    <div class="container">
+        <mat-toolbar-row>
+            <!--SideNav button-->
+            <div fxHide.gt-xs>
+                <button mat-icon-button (click)="onToggleSidenav()">
+                    <mat-icon class="vd-icon-bars" aria-hidden="false" aria-label="Navigation menu">
+                        <fa-icon [icon]="vdFaBars"></fa-icon>
+                    </mat-icon>
+                </button>
+            </div>
+            <!--/.SideNav button-->
+            
+            <!--HeaderNav brand-->
+            <div>
+                <a mat-button
+                    matTooltip="Home"
+                    matTooltipClass="vd-tooltip-black"
+                    [routerLink]='["/home"]'>
+                    <img src="assets/vd/brand/vd-logo-white.png" height="36"
+                            class="d-inline-block align-bottoms" alt="VisionDream logo">
+                </a>
+            </div>            
+
+            <!-- Navigation links -->
+            <div fxFlex fxLayout fxLayoutAlign="start" fxHide.xs>
+                <div fxLayout fxLayoutGap="5px" class="navigation-items">
+                    <a mat-button
+                        matTooltip="Our Services"
+                        matTooltipClass="vd-tooltip-black"
+                        [routerLink]='["/services"]'> Services 
+                    </a>
+                    <!--Portfolio dropdown-->
+                    <div class="dropdown">
+                        <a mat-button
+                            matTooltip="Projects Portfolio"
+                            matTooltipClass="vd-tooltip-black"
+                            class="dropdown-toggle" id="portfolioDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-expanded="false"
+                            [matMenuTriggerFor]="portfolio"> Portfolio
+                        </a>
+                        <mat-menu #portfolio="matMenu">
+                            <button mat-menu-item [routerLink]='["/portfolio"]'>Recent Projects</button>
+                            <mat-divider></mat-divider>
+                            <button mat-menu-item [routerLink]='["/portfolio/visiondream"]'>VisionDream</button>
+                            <button mat-menu-item [routerLink]='["/portfolio/lcf-gfi"]'>LCF GFI</button>
+                            <button mat-menu-item [routerLink]='["/portfolio/soweto-tutor"]'>Soweto Tutor</button>
+                        </mat-menu>
+                    </div>
+                    <!--/.Portfolio dropdown-->                    
+                    <a mat-button
+                        matTooltip="Contact Us"
+                        matTooltipClass="vd-tooltip-black"
+                        [routerLink]='["/contact"]'> Contact 
+                    </a>
+                    <a mat-button
+                        matTooltip="About Us"
+                        matTooltipClass="vd-tooltip-black"
+                        [routerLink]='["/about"]'> About 
+                    </a>
+                </div>
+            </div>
+            <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+                <div fxLayout fxLayoutGap="5px" class="navigation-items">                    
+                    <a mat-button
+                        matTooltip="Contact Our Support"
+                        matTooltipClass="vd-tooltip-black"
+                        role="button" [routerLink]='[""]'>
+                        <mat-icon class="vd-icon-user" aria-hidden="false" aria-label="Twitter connect">
+                            <fa-icon [icon]="vdFaQuestionCircle"></fa-icon>
+                        </mat-icon>
+                        Support
+                    </a>
+                    <a mat-button
+                        matTooltip="Register new account"
+                        matTooltipClass="vd-tooltip-black"
+                        role="button" [routerLink]='["/register"]'>
+                        <mat-icon class="vd-icon-user" aria-hidden="false" aria-label="Register account">
+                            <fa-icon [icon]="vdFaUser"></fa-icon>
+                        </mat-icon>
+                        Register
+                    </a>
+                    <a mat-button
+                        matTooltip="Login to your account"
+                        matTooltipClass="vd-tooltip-black"
+                        role="button" [routerLink]='["/login"]'>
+                        <mat-icon class="vd-icon-user" aria-hidden="false" aria-label="Account login">
+                            <fa-icon [icon]="vdFaSignInAlt"></fa-icon>
+                        </mat-icon>
+                        Login
+                    </a>
+                    <!--Manage account dropdown-->
+                    <!-- <div class="avatar dropdown">
+                        <a mat-button class="dropdown-toggle" id="accountDropdownMenuLink"
+                            role="button" data-toggle="dropdown" aria-expanded="false"
+                            [matMenuTriggerFor]="account">
+                            <img src="assets/vd/images/avatars/kgupi_avatar.png"
+                                    class="rounded-circle z-depth-0" height="35" alt="">
+                            Account
+                        </a>
+                        <mat-menu #account="matMenu">
+                            <button mat-menu-item [routerLink]='[""]'>My account</button>
+                            <button mat-menu-item [routerLink]='[""]'>Log out</button>
+                        </mat-menu>
+                    </div> -->
+                    <!--/.Manage account dropdown-->
+                </div>
+            </div>
+            <!--/.Navigation links-->
+        </mat-toolbar-row>
+    </div>
+</mat-toolbar>
+
+<!-- <mat-toolbar color="primary">
+    <div class="container">
+        <mat-toolbar-row>
+            <button mat-icon-button>
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            </button>
+            <h1>SimpleCRM</h1>
+            <span class="menu-spacer"></span>
+            <div>
+                <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+                <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+                <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+                <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
+                <a mat-button [routerLink]="'/activities'"> Activities </a>
+                <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>    
+            </div>
+        </mat-toolbar-row>
+        
+        <mat-toolbar-row>
+            <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+        </mat-toolbar-row>
+    </div>
+</mat-toolbar> -->

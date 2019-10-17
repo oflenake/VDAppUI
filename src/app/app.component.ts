@@ -151,6 +151,11 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 //import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 //import { faSort } from '@fortawesome/free-solid-svg-icons';
 
+// Icons - Brands
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+
 //import { FaConfig } from '@fortawesome/angular-fontawesome';
 
 @Component({
@@ -197,6 +202,11 @@ export class AppComponent implements OnInit {
   //vdFaClipboardList = faClipboardList;
   //vdFaProjectDiagram = faProjectDiagram;
   //vdFaSort = faSort;
+
+  // Icons - Brands
+  //vdFaFacebook = faFacebook;
+  //vdFaTwitter = faTwitter;
+  //vdFaGithub = faGithub;
 
   // Constructor
   constructor(private _Logger: NGXLogger) {

@@ -17,7 +17,12 @@ import { NavMainComponent } from './navigation/nav-main/nav-main.component';
 import { NavSideComponent } from './navigation/nav-side/nav-side.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
+import { ProductsComponent } from './products/products.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { BlogComponent } from './blog/blog.component';
+
 import { FooterComponent } from './footer/footer.component';
 import { PrivacyComponent } from './pages/legal/privacy/privacy.component';
 import { TermsComponent } from './pages/legal/terms/terms.component';
@@ -60,10 +65,11 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faClipboardList } from '@fortawesome/free-solid-svg-icons';
 import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import { faSort } from '@fortawesome/free-solid-svg-icons';
-import { ProductsComponent } from './products/products.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { AboutComponent } from './about/about.component';
-import { BlogComponent } from './blog/blog.component';
+
+// Icons - Brands
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -74,16 +80,16 @@ import { BlogComponent } from './blog/blog.component';
     NavSideComponent,
     HomeComponent,
     ServicesComponent,
+    ProductsComponent,
+    PortfolioComponent,
     ContactComponent,
+    AboutComponent,
+    BlogComponent,
     FooterComponent,
     PrivacyComponent,
     TermsComponent,
     NotFoundComponent,
-    ServerErrorComponent,
-    ProductsComponent,
-    PortfolioComponent,
-    AboutComponent,
-    BlogComponent
+    ServerErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -113,7 +119,7 @@ export class AppModule {
     library.addIcons(
       faAngleUp, faAngleDown, faAngleLeft, faAngleRight, faMapMarkerAlt, faArchive, faAsterisk, faBalanceScale,
       faPlus, faUserSecret, faCircle, faBars, faEnvelope, faUser, faUserCircle, faSignInAlt, faQuestion, faWrench,
-      faCog, faCogs, faHome, faClipboardList, faProjectDiagram, faSort
+      faCog, faCogs, faHome, faClipboardList, faProjectDiagram, faSort, faFacebook, faTwitter, faGithub
     );
   }
 
